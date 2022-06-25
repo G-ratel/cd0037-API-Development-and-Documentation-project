@@ -1,0 +1,13 @@
+
+create db
+sudo createdb database_bame -U user e.g sudo createdb trivia -U postgres
+
+populate db
+sudo psql -U user database_bame < filename.psql e.g sudo psql -U postgres trivia < trivia.psql
+
+
+flask db init
+
+flask db migrate
+
+flask db upgrade
